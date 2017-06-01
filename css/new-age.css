@@ -190,7 +190,7 @@ header {
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url(../img/header_img.jpg);
+    background-image: url(../img/home.png);
     color: #fff
 }
 
@@ -201,7 +201,7 @@ header .header-content {
 }
 
 header .header-content .header-content-inner {
-    position: relative;
+    position: absolute;
     max-width: 500px;
     margin: 0 auto
 }
@@ -209,7 +209,10 @@ header .header-content .header-content-inner {
 header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 30px;
-    font-size: 30px
+    font-size: 30px;
+	width: auto;
+	font-weight: 700;
+	
 }
 
 header .header-content .header-content-inner .list-badges {
@@ -219,6 +222,15 @@ header .header-content .header-content-inner .list-badges {
 header .header-content .header-content-inner .list-badges img {
     height: 50px;
     margin-bottom: 25px
+}
+
+header .header-content .header-content-inner p {
+  font-weight: 800;
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 50px;
+  width: auto;
 }
 
 header .device-container {
@@ -236,7 +248,7 @@ section header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  background-image: url(../img/services.jpg);
+  background-image: url(../img/services_head.jpeg);
     -o-background-size: cover;
   background-position: center;
   
@@ -247,14 +259,17 @@ section header .header-content {
   position: relative;
   text-align: center;
   padding: 100px 15px 100px;
-  width: 100%;
+  width: 30%;
 }
 section header .header-content .header-content-inner h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 30px;
+	margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 30px;
+	width: auto;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-align: center;
+  
 }
 section header .header-content .header-content-inner hr {
   margin: 30px auto;
@@ -272,13 +287,45 @@ section div header {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  background-image: url(../img/about-us.jpg);
+  background-image: url(../img/about-header.jpg);
+    -o-background-size: cover;
+  background-position: center;
+  
+}
+div section header{
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-image: url(../img/case-studies.jpg);
+    -o-background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+}
+
+div section header .header-content .header-content-inner h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+div div section header{
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-image: url(../img/contact-us.jpeg);
     -o-background-size: cover;
   background-position: center;
   
   text-align: center;
   color: white;
 }
+
 section div header .header-content {
   position: relative;
   text-align: center;
@@ -303,6 +350,7 @@ section div header .header-content .header-content-inner p {
 }
 
 @media (min-width:768px) {
+	
     header {
         min-height: 100%
     }
@@ -312,14 +360,19 @@ section div header .header-content .header-content-inner p {
         height: 100vh
     }
     header .header-content .header-content-inner {
-        max-width: none;
+        max-width: auto;
         margin: 0;
-        position: relative;
+        position: absolute;
         top: 50%;
         transform: translateY(-50%)
     }
     header .header-content .header-content-inner h1 {
-        font-size: 35px
+        font-size: 35px;
+		
+    }
+	header .header-content .header-content-inner p {
+        font-size: 20px;
+		
     }
     header .device-container {
         max-width: none;
@@ -345,7 +398,7 @@ section div header .header-content .header-content-inner p {
         transform: translateY(-50%)
     }
     section header .header-content .header-content-inner h1 {
-        font-size: 35px
+        font-size: 30px
     }
     section header .device-container {
         max-width: none;
@@ -663,6 +716,7 @@ footer ul li a:hover {
     border-color: #fff;
     transition: all .35s;
 }
+
 
 .btn-default,
 .portfolio-box .portfolio-box-caption {
@@ -1216,7 +1270,7 @@ img::-moz-selection {
     width: 50px;
     height: 50px;
     cursor: pointer;
-    border-radius: 1px;
+    border-radius: 5px;
     padding-top: 10px;
     margin-right: 4px;
     text-align: center;
@@ -1232,4 +1286,40 @@ img::-moz-selection {
 padding-top: 20px;
 padding-left: 40px;
 }
+.directors p{
+	font-size: 14px;
+	color: #999;
+}
 
+.about-profile a i:hover {
+    color: #fff
+}
+.glyphicon-map-marker{
+	font-size: 25px;
+}
+.glyphicon-phone{
+	font-size: 25px;
+}
+.glyphicon-envelope{
+	font-size: 25px;
+}
+.address-number p{
+	font-size: 20px;
+}
+/////////////////////////////Clients Logo///////////////////////////////
+
+/* CSS used here will be applied after bootstrap.css */
+
+.col-sm-5cols{
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+@media (min-width: 768px) {
+.col-sm-5cols {
+        width: 20%;
+        float: left;
+    }
+}
