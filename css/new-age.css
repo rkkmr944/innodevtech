@@ -269,6 +269,7 @@ section header .header-content .header-content-inner h1 {
   margin-bottom: 0;
   font-size: 30px;
   width: 300px;
+  text-align: center
   
 }
 section header .header-content .header-content-inner hr {
@@ -311,6 +312,7 @@ div section header .header-content .header-content-inner h1 {
   margin-bottom: 0;
   font-size: 30px;
   width: 300px;
+  text-align: center
 }
 
 div div section header{
@@ -327,6 +329,7 @@ div div section header{
   color: white;
 }
 
+
 section div header .header-content {
   position: relative;
   text-align: center;
@@ -340,6 +343,7 @@ section div header .header-content .header-content-inner h1 {
   margin-bottom: 0;
   font-size: 30px;
   width: 300px;
+  text-align: center
 }
 
 
@@ -1297,6 +1301,11 @@ img::-moz-selection {
 padding-top: 20px;
 padding-left: 40px;
 }
+
+button {
+	background-color: transparent;
+}
+
 .directors p{
 	font-size: 14px;
 	color: #999;
