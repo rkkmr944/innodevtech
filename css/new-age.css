@@ -212,7 +212,8 @@ header .header-content .header-content-inner h1 {
     font-size: 30px;
 	width: auto;
 	font-weight: 700;
-	
+	text-align: left;
+	color: ;
 }
 
 header .header-content .header-content-inner .list-badges {
@@ -225,12 +226,13 @@ header .header-content .header-content-inner .list-badges img {
 }
 
 header .header-content .header-content-inner p {
-  font-weight: 800;
+  font-weight: 400;
   color: black;
   text-align: center;
   font-size: 20px;
   margin-bottom: 50px;
   width: auto;
+  text-align: left;
 }
 
 header .device-container {
@@ -262,13 +264,11 @@ section header .header-content {
   width: 30%;
 }
 section header .header-content .header-content-inner h1 {
-	margin-top: 0;
-    margin-bottom: 30px;
-    font-size: 30px;
-	width: auto;
 	font-weight: 700;
-	text-transform: uppercase;
-	text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  width: 300px;
   
 }
 section header .header-content .header-content-inner hr {
@@ -307,11 +307,12 @@ div section header{
 
 div section header .header-content .header-content-inner h1 {
   font-weight: 700;
-  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 30px;
+  width: 300px;
 }
+
 div div section header{
   position: relative;
   width: 100%;
@@ -332,13 +333,16 @@ section div header .header-content {
   padding: 100px 15px 100px;
   width: 100%;
 }
+
 section div header .header-content .header-content-inner h1 {
   font-weight: 700;
-  text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 30px;
+  width: 300px;
 }
+
+
 section div header .header-content .header-content-inner hr {
   margin: 30px auto;
 }
@@ -1244,7 +1248,7 @@ img::-moz-selection {
 }
 .column-list li {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 8px;
     margin-bottom: 3px;
 }
 .services-last{
@@ -1257,13 +1261,20 @@ img::-moz-selection {
 }
 .services-bottom .img-circle {
     border-radius: 50%;
-	height: 100px;
-	width: 100px;
+	height: 50px;
+	width: 50px;
 }
 .services-bottom p{
-	margin-top: -11px;
-	font-size: 16px
+	margin-top: -8px;
+	font-size: 14px
 }
+
+.services-bottom h3{
+	font-size: 22px;
+	text-transform: uppercase;
+	
+}
+
 .about-profile a i{
 	font-size: 20px;
 	display: inline-block;
