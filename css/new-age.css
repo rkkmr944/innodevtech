@@ -123,8 +123,9 @@ header .container {
     color: black;
 }
 
+
 .navbar-default .nav>li>a:focus:hover,
-.navbar-default .nav>li>a:hover {
+.navbar-default .nav>li>a:hover{
     color: #337ab7
 }
 
@@ -135,7 +136,8 @@ header .container {
 }
 
 .navbar-default .nav>li.active>a:focus:hover,
-.navbar-default .nav>li.active>a:hover {
+.navbar-default .nav>li.active>a:hover
+ {
     background-color: #A9A9A9
 }
 
@@ -253,10 +255,9 @@ section header {
   background-image: url(../img/services_head.jpeg);
     -o-background-size: cover;
   background-position: center;
-  
   text-align: center;
-  color: white;
 }
+
 section header .header-content {
   position: relative;
   text-align: center;
@@ -269,7 +270,7 @@ section header .header-content .header-content-inner h1 {
   margin-bottom: 0;
   font-size: 30px;
   width: 300px;
-  text-align: center
+  text-align: left
   
 }
 section header .header-content .header-content-inner hr {
@@ -311,8 +312,8 @@ div section header .header-content .header-content-inner h1 {
   margin-top: 0;
   margin-bottom: 0;
   font-size: 30px;
-  width: 300px;
-  text-align: center
+  width: 100%;
+  text-align: left
 }
 
 div div section header{
@@ -406,7 +407,7 @@ section div header .header-content .header-content-inner p {
         transform: translateY(-50%)
     }
     section header .header-content .header-content-inner h1 {
-        font-size: 30px
+        font-size: 50px
     }
     section header .device-container {
         max-width: none;
@@ -415,6 +416,57 @@ section div header .header-content .header-content-inner p {
     }
 }
 
+@media (min-width:768px) {
+    section div header {
+        min-height: 100%
+    }
+    section div header .header-content {
+        text-align: center;
+        padding: 0;
+        height: 75vh
+    }
+    section div header .header-content .header-content-inner {
+        max-width: none;
+        margin: 0;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+    section div header .header-content .header-content-inner h1 {
+        font-size: 50px
+    }
+    section div header .device-container {
+        max-width: none;
+        max-height: calc(0vh);
+        margin: 100px auto 0
+    }
+}
+
+@media (min-width:768px) {
+    div section header {
+        min-height: 100%
+    }
+    div section header .header-content {
+        text-align: center;
+        padding: 0;
+        height: 75vh
+    }
+    div section header .header-content .header-content-inner {
+        max-width: none;
+        margin: 0;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+    div section header .header-content .header-content-inner h1 {
+        font-size: 50px
+    }
+    div section header .device-container {
+        max-width: none;
+        max-height: calc(0vh);
+        margin: 100px auto 0
+    }
+}
 
 footer,
 section.contact {
@@ -1342,4 +1394,76 @@ button {
         width: 20%;
         float: left;
     }
+}
+
+/////////////////////////////////////Pop Up///////////////////////////////////
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
 }
