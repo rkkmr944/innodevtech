@@ -118,10 +118,11 @@
 				<!--<button type="button" class="btn btn-primary" >Popup image</button>-->
 
 					<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					  <div class="modal-dialog" style="width: 80%;top: 40%; ">
+					  <div class="modal-dialog" style="width: 90%;top: 40%;">
 						<div class="modal-content">
-							<div class="modal-body" style="background-color: #6666;">
-
+						
+							<div class="modal-body" style="background-color: #666;">
+								
 							  <div class="container project-view">
 						
 						<div class="row">
@@ -130,7 +131,7 @@
 								<img src="img/portfolio/fullsize/1.jpg" alt="" class="img-responsive" style="padding-bottom: 20px"/>
 								<img src="img/portfolio/fullsize/1.jpg" alt="" class="img-responsive" style="padding-bottom: 20px"/>
 							</div>
-							<div class="col-md-4">
+							<div id="rightmenu" class="col-md-4">
 								<div class="project-info">
 									<h2>Innodev Projects</h2>
 
@@ -771,7 +772,7 @@
 							<div class="modal-body" style="background-color: #6666;">
 							
 							  <div class="container project-view">
-						<h1 style="text-align: center" onclick="closeWin()">x</h1>
+						
 						<div class="row">
 						
 							<div class="col-md-9 project-images">
@@ -1029,8 +1030,24 @@ $(window).on("resize", function () {
 function closeWin() {
     myWindow.close();
 }
+
+
 </script>
 
+<script>
+var span = document.getElementsByClassName("close")[0];
+
+	span.onclick = function() {
+    modal-dialog.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 </body>
 
 </html>

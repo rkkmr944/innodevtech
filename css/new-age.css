@@ -155,8 +155,7 @@ header .container {
     }
     .navbar-default .nav>li>a,
     .navbar-default .nav>li>a:focus {
-            color: #333;
-    font-weight: 600;
+        color: #666
     }
     .navbar-default .nav>li>a:focus:hover,
     .navbar-default .nav>li>a:hover {
@@ -1403,4 +1402,4 @@ button {
 #myModal .project-view img{
 	padding-bottom: 20px
 }
-	
+
